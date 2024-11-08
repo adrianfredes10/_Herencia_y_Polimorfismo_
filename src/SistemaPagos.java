@@ -27,12 +27,12 @@ class TarjetaCredito extends MetodoPago implements Cancelable {
         this.codigoSeguridad = codigoSeguridad;
     }
 
-    @Override
+  
     public void realizarPago() {
         System.out.println("Pago realizado con tarjeta de crédito.");
     }
 
-    @Override
+   
     public void cancelarPago() {
         System.out.println("Pago con tarjeta de crédito cancelado.");
     }
@@ -46,12 +46,11 @@ class PayPal extends MetodoPago implements Cancelable {
         this.correoElectronico = correoElectronico;
     }
 
-    @Override
+    
     public void realizarPago() {
         System.out.println("Pago realizado con PayPal.");
-    }
-
-    @Override
+      }
+        
     public void cancelarPago() {
         System.out.println("Pago con PayPal cancelado.");
     }
