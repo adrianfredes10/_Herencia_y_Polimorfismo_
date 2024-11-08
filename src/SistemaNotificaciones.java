@@ -25,12 +25,12 @@ class CorreoElectronico extends CanalNotificacion implements Personalizable {
         this.direccionCorreo = direccionCorreo;
     }
 
-    @Override
+    
     public void enviarNotificacion() {
         System.out.println("Notificación enviada por correo electrónico a " + direccionCorreo);
     }
 
-    @Override
+    
     public void personalizarMensaje(String mensajePersonalizado) {
         mensaje = mensajePersonalizado;
     }
@@ -44,12 +44,12 @@ class MensajeTexto extends CanalNotificacion implements Personalizable {
         this.numeroTelefono = numeroTelefono;
     }
 
-    @Override
+   
     public void enviarNotificacion() {
         System.out.println("Notificación enviada por mensaje de texto al " + numeroTelefono);
     }
 
-    @Override
+   
     public void personalizarMensaje(String mensajePersonalizado) {
         mensaje = mensajePersonalizado;
     }
